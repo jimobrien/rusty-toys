@@ -1,5 +1,3 @@
-
-
 fn longest_palindrome<'a>(string: &'a str) -> &'a str {
   let string_len = string.len();
   let mut result:&str = "";
@@ -27,20 +25,6 @@ fn longest_palindrome<'a>(string: &'a str) -> &'a str {
   }
 
   result
-}
-
-pub struct Response<'a, 'b: 'a> {
-  pub field: &'a Ref<'b, uint>
-}
-
-pub struct Ref<'a, T: 'a> {
-  field: &'a T
-}
-
-impl<'a, T> Ref<'a, T> {
-  pub fn read(&self) -> &T {
-    self.field
-  }
 }
 
 #[test]
