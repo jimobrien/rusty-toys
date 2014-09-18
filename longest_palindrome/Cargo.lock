@@ -1,0 +1,4 @@
+[root]
+name = "longest_palindrome"
+version = "0.0.1"
+
